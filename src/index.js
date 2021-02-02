@@ -13,10 +13,13 @@ function Room() {
     let name = document.getElementById("name").value;
     let postText = document.getElementById("postText").value;
     let time = new Date().toLocaleTimeString();
+    // let url = "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
     let newData = {
       postText: postText,
       name: name,
       time : time,
+
+      
     }
     console.log(postText);
 
@@ -28,14 +31,14 @@ function Room() {
 
   return (
     <div>
-
+       
       <form className= "form"  onSubmit={post} style={{margin: "10px"}}>
 
         <input  required placeholder="Name" type="text" id="name" />
         <br/>
         <textarea required placeholder="what is in your mind" type="text" id="postText" />
         <br/>
-        <button> Post </button>
+        <button className="btn"> Post </button>
       </form>
 
       
@@ -44,8 +47,9 @@ function Room() {
         return (
           <div className= {"content"} key={i} >
             
+          
 
-            <h2>{eachItem.name}</h2>
+       <img className= "img" src = {"https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"}/>           <h2>{eachItem.name}</h2>
             <h5>{eachItem.time}</h5>
             <h6>{eachItem.postText}</h6>
 

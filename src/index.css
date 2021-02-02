@@ -33,3 +33,15 @@ code {
   margin-top: 1%;
   padding: 10px;
 }
+
+
+.btn {
+  background-color: blue;
+  color: wheat;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
