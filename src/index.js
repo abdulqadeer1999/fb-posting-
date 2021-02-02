@@ -50,8 +50,9 @@ function Room() {
           
 
        <img className= "img" src = {"https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"}/>           <h2>{eachItem.name}</h2>
-            <h5>{eachItem.time}</h5>
+            
             <h6>{eachItem.postText}</h6>
+            <h5>{eachItem.time}</h5>
 
           </div>
         )
